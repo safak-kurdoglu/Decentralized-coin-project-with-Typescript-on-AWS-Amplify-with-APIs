@@ -45,5 +45,4 @@ exports.handler = async (event) => {
 };
 
 
-
 After all, type "amplify push" and then copy aws-exports.js file to admin/src folder.
