@@ -1,0 +1,20 @@
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  position: absolute;
+  left: 100px;
+  top: 2px;
+}
+
+.connection{
+  position: absolute;
+  left: 125px;
+  top: 2px;
+  display: none;
+}
+
+.dot:hover ~ .connection {
+  display: block;
+}
