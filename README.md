@@ -1,6 +1,6 @@
 # Decentralized-coin-project-with-Typescript-on-AWS-Amplify-with-APIs
 
-This is Decentralized coin project(without consensus) and main website deployed on AWS with APIs.
+This is Decentralized coin project(without consensus) and main website deployed on AWS Amplify with APIs.
 
 It is shortly explained on : https://www.youtube.com/watch?v=NKhc8B5SJls&ab_channel=safakkurdoglu
 
