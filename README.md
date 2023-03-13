@@ -3,8 +3,10 @@
 This is Decentralized coin project(without consensus) and main website deployed on AWS with APIs.
 
 To run the program on your local computer, at the coin folder, you have to type "amplify init". 
+
 Then do "amplify add api" that is graphql with amazon incognito authentication and update schema.graphql with = 
 
+shema.graphql :
 type Node @model @auth(rules: [{ allow: public, provider: apiKey, operations: [create, read]},  { allow: groups, groups: ["Admin"]}]) {
   id: ID!  #uri
   x: Float!
@@ -24,6 +26,7 @@ type TransactionNum @model @auth(rules: [{ allow: owner, provider: userPools, op
 
 Then again do "amplify add api", that is rest api and unprotected, and change index.js with : 
 
+index.js :
 const key = "your appsync apiKey";
 
 exports.handler = async (event) => {
