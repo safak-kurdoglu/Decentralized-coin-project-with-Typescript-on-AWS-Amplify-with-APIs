@@ -1,6 +1,7 @@
 # Decentralized-coin-project-with-Typescript-on-AWS-Amplify-with-APIs
 
 This is Decentralized coin project(without consensus) and main website deployed on AWS with APIs.
+
 To run the program on your local computer, at the coin folder, you have to type "amplify init". 
 Then do "amplify add api" that is graphql with amazon incognito authentication and update schema.graphql with = 
 
@@ -20,6 +21,7 @@ type TransactionNum @model @auth(rules: [{ allow: owner, provider: userPools, op
   transactionNum: Int!
 }
 
+
 Then again do "amplify add api", that is rest api and unprotected, and change index.js with : 
 
 const key = "your appsync apiKey";
@@ -34,5 +36,6 @@ exports.handler = async (event) => {
         body: JSON.stringify(key),
     };
 };
+
 
 After all, type "amplify push" and then copy aws-exports.js file to admin/src folder.
