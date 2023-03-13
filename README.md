@@ -7,6 +7,7 @@ To run the program on your local computer, at the coin folder, you have to type 
 Then do "amplify add api" that is graphql with amazon incognito authentication and update schema.graphql with = 
 
 shema.graphql :
+
 type Node @model @auth(rules: [{ allow: public, provider: apiKey, operations: [create, read]},  { allow: groups, groups: ["Admin"]}]) {
   id: ID!  #uri
   x: Float!
