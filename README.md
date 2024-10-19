@@ -2,8 +2,6 @@
 
 This is Decentralized coin project(without consensus) and main website deployed on AWS Amplify with APIs.
 
-It is shortly explained on : https://www.youtube.com/watch?v=NKhc8B5SJls&ab_channel=safakkurdoglu
-
 To run the program on your local computer, at the coin folder, you have to type "amplify init". 
 
 Then do "amplify add api" that is graphql with Amazon Cognito authentication and update schema.graphql with,
